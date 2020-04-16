@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en-US" class="theme-color-07aaf5 light_skin">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="pingback" href="xmlrpc.php">
+
+	<link rel="icon" href="">
+	<title>Doctor &#8211; Vinod Puri</title>
+
+	<link rel='stylesheet' id='rscard-woocommerce-smallscreen-css'
+		href='wp-content/themes/rs-card/woocommerce/css/woocommerce-smallscreen-13062.css' type='text/css'
+		media='all' />
+	<link rel='stylesheet' id='google-font0-css' href='https://fonts.googleapis.com/css?family=Fredoka+One&ver=4.9.13'
+		type='text/css' media='all' />
+	<link rel='stylesheet' id='Open Sans-css'
+		href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&ver=4.9.13' type='text/css'
+		media='all' />
+	<link rel='stylesheet' id='Fredoka One-css'
+		href='https://fonts.googleapis.com/css?family=Fredoka+One:400&ver=4.9.13' type='text/css' media='all' />
+	<link rel='stylesheet' id='icon-fonts-map-css'
+		href='wp-content/themes/rs-card/fonts/map-icons/css/map-icons.min-13062.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='icon-fonts-css' href='wp-content/themes/rs-card/fonts/icomoon/style-13062.css'
+		type='text/css' media='all' />
+
+	<link rel='stylesheet' id='rscard-style-css' href='wp-content/themes/rs-card/style-13062.css' type='text/css'
+		media='all' />
+	<script type='text/javascript' src='wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+	<script type='text/javascript' src='wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+
+	<script type='text/javascript' src='wp-content/themes/rs-card/js/site.js?ver=1'></script>
+	<script type='text/javascript' src='wp-content/themes/rs-card/js/libs/modernizr.js?ver=4.9.13'></script>
+
+
+	<style type='text/css'>
+		body,
+		select,
+		textarea,
+		input[type='tel'],
+		input[type='text'],
+		input[type='email'],
+		input[type='search'],
+		input[type='password'],
+		.btn,
+		.filter button,
+		.nav-wrap .nav a,
+		.mobile-nav .nav a {
+			font-family: "Open Sans";
+		}
+
+		.logo,
+		.site-title {
+			font-family: "Fredoka One";
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: "Open Sans";
+		}
+
+		.head-bg:before {
+			background-color: rgba(44, 51, 64, 0.8);
+		}
+
+		.theme-color-07aaf5 a,
+		.theme-color-07aaf5 blockquote:before,
+		.theme-color-07aaf5 .contact-map .contact-info a:hover,
+		.theme-color-07aaf5 .interests-list i,
+		.theme-color-07aaf5 .input-field.used label,
+		.theme-color-07aaf5 .logo span,
+		.theme-color-07aaf5 #map .map-icon,
+		.theme-color-07aaf5 .head-cont .btn-mobile,
+		.theme-color-07aaf5 .page-404 h2 span,
+		.theme-color-07aaf5 .post-box .post-title a:hover,
+		.theme-color-07aaf5 .post-single .post-title a:hover,
+		.theme-color-07aaf5 .post-pagination .post-title a:hover,
+		.theme-color-07aaf5 .post-comments .section-title,
+		.theme-color-07aaf5 .ref-box .person-speech:before,
+		.theme-color-07aaf5 .service-icon,
+		.theme-color-07aaf5 .statistic-value,
+		.theme-color-07aaf5 .service-sub-title,
+		.theme-color-07aaf5 .styled-list li:before,
+		.theme-color-07aaf5 .timeline-box .date,
+		.theme-color-07aaf5 .twitter-icon .rsicon,
+		.theme-color-07aaf5 .tabs-vertical .tabs-menu a:hover,
+		.theme-color-07aaf5 .tabs-vertical .tabs-menu .active a,
+		.theme-color-07aaf5 .widget-title,
+		.theme-color-07aaf5 .widget_search label:before,
+		.theme-color-07aaf5 .widget_search .search-form:before,
+		.theme-color-07aaf5 .widget_meta ul li a:hover,
+		.theme-color-07aaf5 .widget_archive ul li a:hover,
+		.theme-color-07aaf5 .widget_nav_menu ul li a:hover,
+		.theme-color-07aaf5 .widget_categories ul li a:hover,
+		.theme-color-07aaf5 .widget_recent_entries ul li a:hover,
+		.theme-color-07aaf5 .widget_recent_comments ul li a:hover,
+		.theme-color-07aaf5 .widget-popuplar-posts .post-title a:hover,
+		.theme-color-07aaf5 .widget-recent-posts .post-title a:hover,
+		.theme-color-07aaf5 .head-woo-count {
+			color: #07aaf5;
+		}
+
+		.theme-color-07aaf5 .head-nav .sub-menu li:hover>a,
+		.theme-color-07aaf5 .head-nav .sub-menu li.active,
+		.theme-color-07aaf5 .head-lang .lang-list a:hover {
+			color: #07aaf5 !important;
+		}
+
+		.theme-color-07aaf5 mark,
+		.theme-color-07aaf5 .btn-primary,
+		.theme-color-07aaf5 .btn-primary-outer,
+		.theme-color-07aaf5 .btn-sidebar-close,
+		.theme-color-07aaf5 .calendar-today .date,
+		.theme-color-07aaf5 .calendar-body .busy-day,
+		.theme-color-07aaf5 .calendar-body td .current-day,
+		.theme-color-07aaf5 .filter .active:after,
+		.theme-color-07aaf5 .filter-bar .filter-bar-line,
+		.theme-color-07aaf5 .input-field .line:before,
+		.theme-color-07aaf5 .input-field .line:after,
+		.theme-color-07aaf5 .mobile-nav,
+		.theme-color-07aaf5 .head-nav .nav>ul>li>a:after,
+		.theme-color-07aaf5 .post-datetime,
+		.theme-color-07aaf5 .profile-social,
+		.theme-color-07aaf5 .profile-preword span,
+		.theme-color-07aaf5 .progress-bar .bar-fill,
+		.theme-color-07aaf5 .progress-bar .bar-line:after,
+		.theme-color-07aaf5 .price-box.box-primary .btn,
+		.theme-color-07aaf5 .price-box.box-primary .price-box-top,
+		.theme-color-07aaf5 .profile-list .button,
+
+		.theme-color-07aaf5 .pagination span.page-numbers.current,
+		.theme-color-07aaf5 .pagination a.page-numbers:active,
+
+		.theme-color-07aaf5 .latest-tweets .slick-dots button:hover,
+		.theme-color-07aaf5 .latest-tweets .slick-dots .slick-active button,
+
+		.theme-color-07aaf5 .tabs-horizontal .tabs-menu a:hover:after,
+		.theme-color-07aaf5 .tabs-horizontal .tabs-menu .active a:after,
+		.theme-color-07aaf5 .togglebox-header,
+		.theme-color-07aaf5 .accordion-header,
+		.theme-color-07aaf5 .timeline-bar,
+		.theme-color-07aaf5 .timeline-box .dot,
+		.theme-color-07aaf5 .timeline-box-compact .date span,
+		.theme-color-07aaf5 .widget_tag_cloud a:hover,
+		.theme-color-07aaf5 .widget_product_tag_cloud a:hover,
+		.theme-color-07aaf5 .wpcf7-form .wpcf7-submit {
+			background-color: #07aaf5;
+		}
+
+		.theme-color-07aaf5 .mejs-container .mejs-controls .mejs-time-rail .mejs-time-current,
+		.theme-color-07aaf5 .mejs-container .mejs-controls .mejs-horizontal-volume-slider .mejs-horizontal-volume-current {
+			background: #07aaf5;
+		}
+
+		.theme-color-07aaf5 .timeline-box-inner,
+		.theme-color-07aaf5 .price-box.box-primary .btn,
+		.theme-color-07aaf5 .widget_search .search-form,
+		.theme-color-07aaf5 .widget_product_search .search-form,
+		.theme-color-07aaf5 .widget_tag_cloud a:hover,
+		.theme-color-07aaf5 .widget_product_tag_cloud a:hover,
+		.theme-color-07aaf5 .wpcf7-form .wpcf7-form-control:focus {
+			border-color: #07aaf5;
+		}
+
+		.theme-color-07aaf5 .page-404 h2 span:before,
+		.theme-color-07aaf5 .profile-preword span:before,
+		.theme-color-07aaf5 .timeline-box-compact .date span:before {
+			border-left-color: #07aaf5;
+		}
+
+		.theme-color-07aaf5 .price-box.box-primary .price-box-top:before {
+			border-top-color: #07aaf5;
+		}
+
+		.woocommerce .star-rating,
+		.woocommerce .star-rating:before,
+		.woocommerce .product-links .button,
+		.woocommerce .product-links .button:hover,
+		.woocommerce div.product p.price,
+		.woocommerce div.product span.price,
+		.widget_product_search .woocommerce-product-search:before,
+		.woocommerce .product-links a,
+		.woocommerce .product-links a.button {
+			color: #07aaf5;
+		}
+
+		.woocommerce span.onsale,
+		.woocommerce #respond input#submit.alt,
+		.woocommerce a.button.alt,
+		.woocommerce button.button.alt,
+		.woocommerce input.button.alt,
+		.woocommerce div.product .woocommerce-tabs ul.tabs li a:hover:after,
+		.woocommerce div.product .woocommerce-tabs ul.tabs li.active a:after {
+			background-color: #07aaf5;
+		}
+
+		.woocommerce span.onsale:before {
+			border-left-color: #07aaf5;
+		}
+
+		.widget_product_search .woocommerce-product-search {
+			border-color: #07aaf5;
+		}
+	</style>
+
+</head>
+
+<body
+	class="home page-template page-template-page-home page-template-page-home-php page page-id-310 woocommerce-no-js header-has-img  masthead-fixed loading">
+
+	<div class="mobile-nav">
+		<button class="btn-mobile mobile-nav-close"><i class="rsicon rsicon-close"></i></button>
+		<div id="mobile-nav" class="mobile-nav-inner">
+			<div class="head-items">
+				<a class="head-woo" href="index.html">
+					<i class="rsicon rsicon-shopping-basket"></i>
+					<span class="head-woo-count">0</span>
+				</a>
+
+			</div>
+
+		</div>
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="head-bg"
+				style="background-image: url('wp-content/uploads/sites/3/2015/11/photo-1452783741492-96adb67032b5-1.jpg')">
+			</div>
+			<div class="head-bar has-woo has-sidebar head-sticky-classic">
+				<div class="head-bar-inner">
+					<div class="row">
+						<div class="col-lg-2 col-md-3 col-xs-6">
+							<a class="logo" href="index.html">
+								<span>Dr. </span>Vinod Puri </a>
+						</div>
+
+						<div class="col-lg-10 col-md-9 col-xs-6">
+							<div class="head-cont clearfix">
+
+								<button class="btn-mobile btn-mobile-nav">Menu</button>
+								<div id="head-nav" class="head-nav">
+									<nav class="nav">
+										<ul class="clearfix">
+											<li id="menu-item-449"
+												class="menu-item menu-item-type-custom menu-item-object-custom"><a
+													href="https://px-lab.com/themes/rscard-wp/doctor/#about">About</a>
+											</li>
+											<li id="menu-item-451"
+												class="menu-item menu-item-type-custom menu-item-object-custom">
+												<a
+													href="https://px-lab.com/themes/rscard-wp/doctor/#experience">Experience</a><span
+													class='rsicon rsicon-chevron-down'></span>
+
+											</li>
+
+											<!-- <li id="menu-item-453"
+												class="menu-item menu-item-type-custom menu-item-object-custom"><a
+													href="https://px-lab.com/themes/rscard-wp/doctor/#pricing">Pricing</a>
+											</li> -->
+
+
+											<li id="menu-item-455"
+												class="menu-item menu-item-type-custom menu-item-object-custom"><a
+													href="https://px-lab.com/themes/rscard-wp/doctor/#contact">Contact</a>
+											</li>
+
+										</ul>
+									</nav>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="content">
+			<div class="container">
+				<section id="about" class="section section-about">
+					<div class="animate-up">
+						<div class="section-box">
+							<div class="profile">
+								<div class="row">
+									<div class="col-sm-5">
+										<div class="profile-photo">
+											<img alt="" src="wp-content/uploads/sites/3/2015/11/doc-1-299x347.jpg"
+												srcset="https://rscard.px-lab.com/doctor/wp-content/uploads/sites/3/2015/11/doc-1-598x694.jpg 2x"
+												class="photo">
+										</div>
+									</div>
+									<div class="col-sm-7">
+										<div class="profile-info">
+											<div class="profile-items clearfix">
+												<div class="profile-preword"><span>I&#039;m</span></div>
+
+											</div>
+											<h1 class="profile-title">
+												<span>Doctor</span>
+												Vinod Puri </h1>
+											<h2 class="profile-position">MBBS, MD, DM (NEUROLOGY)</h2>
+										</div>
+										<ul class="profile-list">
+											<li class="clearfix">
+												<strong class="title">Practicing</strong>
+												<span class="cont">+15 years</span>
+											</li>
+											<li class="clearfix">
+												<strong class="title">Address</strong>
+												<span class="cont">1160 Bvd St-Jo Est, Montréal, QC H2J 1L4,
+													Canada</span>
+											</li>
+											<li class="clearfix">
+												<strong class="title">E-mail</strong>
+												<span class="cont">dcbkindman@yourclinick.com</span>
+											</li>
+											<li class="clearfix">
+												<strong class="title">Phone</strong>
+												<span class="cont">+1 256 321 54 84 56</span>
+											</li>
+											<li class="clearfix">
+												<strong class="title">Open doors days</strong>
+												<span class="cont">Every Thursday 15:00-18:00</span>
+											</li>
+											<!-- <li class="clearfix">
+												<strong class="title"><span class="button">Vacation</span></strong>
+												<span class="cont">
+													<i class="rsicon rsicon-calendar"></i>April 15, 2017 - May 15, 2017
+												</span>
+											</li> -->
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="profile-social">
+								<ul class="social">
+									<li><a href="https://twitter.com/_pxlab" target="_blank"><i
+												class="rsicon rsicon-twitter"></i></a></li>
+									<li><a href="https://www.facebook.com/pxlaboratory/" target="_blank"><i
+												class="rsicon rsicon-facebook"></i></a></li>
+									<li><a href="https://dribbble.com/Px-Lab" target="_blank"><i
+												class="rsicon rsicon-dribbble"></i></a></li>
+									<li><a href="https://www.linkedin.com/" target="_blank"><i
+												class="rsicon rsicon-linkedin"></i></a></li>
+									<li><a href="https://instagram.com/" target="_blank"><i
+												class="rsicon rsicon-instagram"></i></a></li>
+									<li><a href="https://plus.google.com/" target="_blank"><i
+												class="rsicon rsicon-google-plus"></i></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="section-txt-btn">
+							<p>Dr. Vinod Puri is a Neurologist at Max Super Speciality Hospital at Saket in New Delhi.
+								He has completed his MBBS from Kashmir University, Kashmir, MD from Punjab University,
+								Patiala and did his DM in Neurology from the University of Delhi.
+
+								He also worked at G. B. Pant Hospital as an Associate Professor, Assistant Professor,
+								Direct Professor Head and Head of Comprehensive Epilepsy care. He is elected as a
+								President at Delhi Neurological Association in 2017.
+							</p>
+							<!-- <a class="btn btn-lg btn-default ripple" target="_blank" href="#">Download my story</a> -->
+
+						</div>
+					</div>
+				</section>
+
+				<section id="experience" class="section section-experience">
+					<div class="animate-up">
+						<h2 class="section-title">Work Experience</h2>
+						<div class="timeline">
+							<div class="timeline-bar"></div>
+							<div class="timeline-inner clearfix">
+								<div class="timeline-box ">
+									<span class="dot"></span>
+									<div class="timeline-box-inner ">
+										<span class="arrow"></span>
+										<div class="timeline-head">
+
+											<div class="date">2004 - till now</div>
+											<h3>
+												Private practice at MycompanyDent </h3>
+											<img class="img" src="" alt="">
+											<h4>General dentist</h4>
+										</div>
+										<p>As a general dentist I had to do extraction, restorations, crowns and
+											bridges, complete and partial dentures, periodontal therapy, RCT,etc</p>
+									</div>
+								</div>
+								<div class="timeline-box ">
+									<span class="dot"></span>
+									<div class="timeline-box-inner ">
+										<span class="arrow"></span>
+										<div class="timeline-head">
+
+											<div class="date">2003 - 2004</div>
+											<h3>
+												Partners Pharmaceuticals, San Diego, CA </h3>
+											<img class="img" src="" alt="">
+											<h4>Dental Assistant</h4>
+										</div>
+										<p>Responsibilities: Follow all Start of Day procedures, Maintain a high level
+											of customer service at all times, Work as part of a team with emphasis on
+											communication </p>
+									</div>
+								</div>
+								<div class="timeline-box ">
+									<span class="dot"></span>
+									<div class="timeline-box-inner ">
+										<span class="arrow"></span>
+										<div class="timeline-head">
+
+											<div class="date">2000 - 2003</div>
+											<h3>
+												Boston Community Health Center </h3>
+											<img class="img" src="" alt="">
+											<h4>Dental Intern</h4>
+										</div>
+										<p>Reponsibilities: provide dental assistance, operating the radiology
+											department and fabricating routine lab work</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="education" class="section section-education">
+					<div class="animate-up">
+						<h2 class="section-title">Education</h2>
+						<div class="timeline">
+							<div class="timeline-bar"></div>
+							<div class="timeline-inner clearfix">
+								<div class="timeline-box timeline-box-compact ">
+									<span class="dot"></span>
+
+									<div class="timeline-box-inner ">
+										<span class="arrow"></span>
+										<div class="date">1984</div>
+										<h3>DM (Neurology)</h3>
+
+										<h4>
+											BUniversity of Delhi </h4>
+									</div>
+								</div>
+								<div class="timeline-box timeline-box-compact ">
+									<span class="dot"></span>
+
+									<div class="timeline-box-inner ">
+										<span class="arrow"></span>
+										<div class="date">1978</div>
+										<h3>MD</h3>
+
+										<h4>
+											Punjabi University, Patiala </h4>
+									</div>
+								</div>
+								<div class="timeline-box timeline-box-compact ">
+									<span class="dot"></span>
+
+									<div class="timeline-box-inner ">
+										<span class="arrow"></span>
+										<div class="date">1974</div>
+										<h3>MBBS</h3>
+
+										<h4>
+											Kashmir University, Kashmir </h4>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="education" class="section section-education">
+					<div class="animate-up">
+						<h2 class="section-title">Professional Teaching Experience:</h2>
+						<div class="timeline">
+							<div class="timeline-bar"></div>
+							<div class="timeline-inner clearfix">
+								<div class="timeline-box timeline-box-compact ">
+									<span class="dot"></span>
+
+									<div class="timeline-box-inner ">
+										<span class="arrow"></span>
+										<div class="date">Senior Resident:</div>
+										<h3>Pediatrics</h3>
+
+										<h4>
+											Lok Nayak Hospital, New Delhi
+											W.e.f. August 08, 1978 to August 08,1981. </h4>
+									</div>
+								</div>
+								<div class="timeline-box timeline-box-compact ">
+									<span class="dot"></span>
+
+									<div class="timeline-box-inner ">
+										<span class="arrow"></span>
+										<div class="date">Senior Resident:</div>
+										<h3>Neurology</h3>
+
+										<h4>
+											G.B.Pant Hospital,New Delhi
+											w.e.f. September 11, 1981 to January 24, 1985. </h4>
+									</div>
+								</div>
+								<div class="timeline-box timeline-box-compact ">
+									<span class="dot"></span>
+
+									<div class="timeline-box-inner ">
+										<span class="arrow"></span>
+										<div class="date">Faculty Position: </div>
+										<h3> Assistant Professor of Neurology</h3>
+
+										<h4>
+											G.B.Pant Hospital. GIPMER, New Delhi.
+											w.e.f.January25, 1985 to February 5, 1990. </h4>
+									</div>
+								</div>
+								<div class="timeline-box timeline-box-compact ">
+									<span class="dot"></span>
+
+									<div class="timeline-box-inner ">
+										<span class="arrow"></span>
+										<div class="date">Faculty Position: </div>
+										<h3> Associate Professor of Neurology</h3>
+
+										<h4>
+											G.B.PantHospital.NewDelhi
+											w.e.f. July 27,1994 to October 29,2008 </h4>
+									</div>
+								</div>
+								<div class="timeline-box timeline-box-compact ">
+									<span class="dot"></span>
+
+									<div class="timeline-box-inner ">
+										<span class="arrow"></span>
+										<div class="date">Faculty Position: </div>
+										<h3> Director-Professor of Neurology</h3>
+
+										<h4>
+											GIPMER, New Delhi
+											w.e.f. October29, 2008 to April 30, 2017
+										</h4>
+									</div>
+								</div>
+						
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="references" class="section section-references">
+					<div class="animate-up">
+						<h2 class="section-title">Patient Experience</h2>
+
+						<div class="section-box">
+							<ul class="ref-slider" data-speed="8000" data-adaptive="true" data-rotate="true">
+								<li>
+									<div class="ref-box">
+										<div class="person-speech">
+											<p>Your participation in the survey will help other patients make informed
+												decisions. You will also be helping Dr. Vinod Puri and his staff know
+												how they are doing and how they can improve their services.</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="ref-box">
+										<div class="person-speech">
+											<p>Your participation in the survey will help other patients make informed
+												decisions. You will also be helping Dr. Vinod Puri and his staff know
+												how they are doing and how they can improve their services.</p>
+										</div>
+									</div>
+							</ul>
+							<div class="ref-slider-nav">
+								<span class="slider-prev"></span>
+								<span class="slider-next"></span>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="statistics" class="section section-statistics text-left">
+					<div class="animate-up">
+						<h2 class="section-title">My work in numbers</h2>
+						<div class="section-box-transparent">
+							<div class="row">
+								<div class="col-sm-3">
+									<div class="statistic">
+										<div class="statistic-value">943</div>
+										<h3 class="statistic-title">
+											<i class="map-icon map-icon-dentist"></i> Teeths </h3>
+										<div class="statistic-cont">
+											<p>cured</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="statistic">
+										<div class="statistic-value">174</div>
+										<h3 class="statistic-title">
+											<i class="map-icon map-icon-male"></i> Patients </h3>
+										<div class="statistic-cont">
+											<p>per day</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="statistic">
+										<div class="statistic-value">15</div>
+										<h3 class="statistic-title">
+											<i class="map-icon map-icon-school"></i> Years </h3>
+										<div class="statistic-cont">
+											<p>experience</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-3">
+									<div class="statistic">
+										<div class="statistic-value">3</div>
+										<h3 class="statistic-title">
+											<i class="map-icon map-icon-university"></i> Triple </h3>
+										<div class="statistic-cont">
+											<p>best dantist of the year</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="text_section" class="section section-text">
+					<div class="animate-up">
+						<h2 class="section-title">Memberships</h2>
+						<div class="section-box">
+							<ul>
+								<li>Secretary, Delhi Neurological Association w.e.f. 2002 to 2006 </li>
+								<li>Member National Executive body, Neurological society of India w.e.f. 2003-2006</li>
+								<li>Member executive committee of Indian Academy of Neurology 2011-2014</li>
+								<li>Currently President elect -Delhi Neurological Association -2017</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section id="services" class="section section-services text-left">
+					<div class="animate-up">
+						<h2 class="section-title">Our Services</h2>
+						<div class="section-box">
+
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="service">
+										<div class="service-icon"><i class="map-icon map-icon-dentist"></i></div>
+										<h3 class="service-title">Dental services</h3>
+										<h4 class="service-sub-title">Secondary title</h4>
+										<div class="service-cont">
+											<hr>
+											<p>Here can be my brand new service description</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="service">
+										<div class="service-icon"><i class="map-icon map-icon-hospital"></i></div>
+										<h3 class="service-title">Reciept in Hostpital</h3>
+										<h4 class="service-sub-title">Secondary title</h4>
+										<div class="service-cont">
+											<hr>
+											<p>Here can be my brand new service description</p>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="service">
+										<div class="service-icon"><i class="map-icon map-icon-pharmacy"></i></div>
+										<h3 class="service-title">Hubs and medicine</h3>
+										<h4 class="service-sub-title">Secondary title</h4>
+										<div class="service-cont">
+											<hr>
+											<p>Here can be my brand new service description</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<!-- <section id="pricing" class="section section-prices">
+					<div class="animate-up">
+						<h2 class="section-title">Pricing</h2>
+
+						<div class="row price-list">
+							<div class="col-sm-4">
+								<div class="price-box">
+									<div class="price-box-top">
+										<span>$250</span>
+										<small>/mo</small>
+									</div>
+									<div class="price-box-content">
+										<h3>Basic</h3>
+										<ul>
+											<li>First time consultation</li>
+											<li>Dental cleaning</li>
+											<li>Filling 1 surface</li>
+											<li><del>Surgical extraction </del></li>
+											<li><del>Parcial resin (1–3 teeth)</del></li>
+											<li><del>Apicectomy</del><del></del></li>
+										</ul>
+										<div class="btn-wrap">
+											<a class="btn btn-lg btn-border" href="#">
+												Buy Now </a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="price-box box-primary">
+									<div class="price-box-top">
+										<span>$750</span>
+										<small>/mo</small>
+									</div>
+									<div class="price-box-content">
+										<h3>Professional</h3>
+										<ul>
+											<li>Zircon-ceramic crown</li>
+											<li>Implant &#8211; surgical stage</li>
+											<li>Ceramic crown on implant</li>
+											<li>Apicectomy</li>
+											<li>Tissue biopsy</li>
+											<li><del>Bracket installation (per jaw):</del></li>
+										</ul>
+										<div class="btn-wrap">
+											<a class="btn btn-lg btn-border" href="#">
+												Buy Now </a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4">
+								<div class="price-box">
+									<div class="price-box-top">
+										<span>$1200</span>
+										<small>/mo</small>
+									</div>
+									<div class="price-box-content">
+										<h3>Enterprise</h3>
+										<ul>
+											<li>Tooth implants (Germany)</li>
+											<li>Panoramic picture + 3D</li>
+											<li>Radiovisiographic picture</li>
+											<li>Plate prosthesis</li>
+											<li>Removal of a tooth<span class="new">new</span></li>
+											<li>Cervical caries <span class="new">new</span></li>
+										</ul>
+										<div class="btn-wrap">
+											<a class="btn btn-lg btn-border" href="#">
+												Buy Now </a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="section-txt-btn">
+							<p>Our clinic provides professional services, flexible and cheep prices.  For any additional
+								packages please contact us <a href="#">directly</a>.</p>
+						</div>
+					</div>
+				</section> -->
+
+				<section id="interests" class="section section-interests">
+					<div class="animate-up">
+						<h2 class="section-title">My Interests</h2>
+						<div class="section-box">
+							
+							<ul style="list-style: none;">
+								<li>
+									
+									<span>Clinical Neuroelectrophysiology
+									</span>
+								</li>
+								<li>
+									
+									<span>Nerve & Muscle disorders.
+									</span>
+								</li>
+								<li>
+									<span>Epilepsy</span>
+								</li>
+								<li>
+									<span>Stroke</span>
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section id="skills" class="section section-skills">
+					<div class="animate-up">
+						<h2 class="section-title">Professional Skills</h2>
+						<div class="section-box">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="progress-bar">
+										<div class="bar-data">
+											<span class="bar-title">Surgery</span>
+											<span class="bar-value">75 %</span>
+
+										</div>
+										<div class="bar-line">
+											<span class="bar-fill" data-width="75%"></span>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="progress-bar">
+										<div class="bar-data">
+											<span class="bar-title">Consultancy</span>
+											<span class="bar-value">peaces</span>
+
+										</div>
+										<div class="bar-line">
+											<span class="bar-fill" data-width="22%"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="progress-bar">
+										<div class="bar-data">
+											<span class="bar-title">Ambulance</span>
+											<span class="bar-value">2 year experience</span>
+
+										</div>
+										<div class="bar-line">
+											<span class="bar-fill" data-width="47%"></span>
+										</div>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="progress-bar">
+										<div class="bar-data">
+											<span class="bar-title">Clinic</span>
+											<span class="bar-value">Once a week</span>
+
+										</div>
+										<div class="bar-line">
+											<span class="bar-fill" data-width="100%"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="progress-bar">
+										<div class="bar-data">
+											<span class="bar-title">Custom text</span>
+
+										</div>
+										<div class="bar-line">
+											<span class="bar-fill" data-width="90%"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="contact" class="section section-contact">
+					<div class="animate-up">
+						<h2 class="section-title">Contact Us</h2>
+
+						<div class="row">
+							<div class="col-sm-6 col-md-offset-3">
+								<div class="section-box">
+									<h3>Feel free to contact me</h3>
+									<form class='contactForm' action='#' method='post'>
+										<div class='input-field'>
+											<input class='contact-name' type='text' name='name' />
+											<span class='line'></span>
+											<label>Name</label>
+										</div>
+
+										<div class='input-field'>
+											<input class='contact-email' type='email' name='email' />
+											<span class='line'></span>
+											<label>Email</label>
+										</div>
+
+										<div class='input-field'>
+											<input class='contact-subject' type='text' name='subject' />
+											<span class='line'></span>
+											<label>Subject</label>
+										</div>
+
+										<div class='input-field'>
+											<textarea class='contact-message' rows='4' name='message'></textarea>
+											<span class='line'></span>
+											<label>Message</label>
+										</div>
+										<div class="check-field">
+											<input type="checkbox" name="rsPivacyPolicy" id="rsPivacyPolicy">
+											<label for="rsPivacyPolicy">I have read the Privacy Policy note.</label>
+										</div><span class='btn-outer btn-primary-outer ripple'>
+											<input class='contact-submit btn btn-lg btn-primary' type='submit'
+												value='Send' />
+										</span>
+
+										<div class='contact-response'></div>
+									</form>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</section>
+
+
+
+
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="footer-social">
+
+			</div>
+		</footer>
+	</div>
+
+	<a href="#" class="btn-scroll-top"><i class="rsicon rsicon-arrow-up"></i></a>
+	<div id="overlay"></div>
+	<div id="preloader">
+		<div class="preload-icon"><span></span><span></span></div>
+		<div class="preload-text"></div>
+	</div>
+
+	<script type='text/javascript'
+		src='wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=3.4.4'></script>
+	<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?ver=4.9.13'></script>
+	<script type='text/javascript' src='wp-content/themes/rs-card/fonts/map-icons/js/map-icons.min.js?ver=4.9.13'>
+	</script>
+	<script type='text/javascript' src='wp-includes/js/imagesloaded.min.js?ver=3.2.0'></script>
+	<script type='text/javascript' src='wp-content/themes/rs-card/js/plugins/isotope.pkgd.min.js?ver=4.9.13'></script>
+	<script type='text/javascript' src='wp-content/themes/rs-card/js/plugins/jquery.appear.js?ver=4.9.13'></script>
+	<script type='text/javascript' src='wp-content/themes/rs-card/js/plugins/jquery.onepagenav.min.js?ver=4.9.13'>
+	</script>
+	<script type='text/javascript'
+		src='wp-content/themes/rs-card/js/plugins/jquery.bxslider/jquery.bxslider.min.js?ver=4.9.13'></script>
+	<script type='text/javascript'
+		src='wp-content/themes/rs-card/js/plugins/jquery.customscroll/jquery.mCustomScrollbar.concat.min.js?ver=4.9.13'>
+	</script>
+
+
+	<script type='text/javascript'
+		src='wp-content/themes/rs-card/js/plugins/jquery.owlcarousel/owl.carousel.js?ver=4.9.13'></script>
+	<script type='text/javascript' src='wp-content/themes/rs-card/js/plugins/jquery.slick/slick.min.js?ver=4.9.13'>
+	</script>
+	<script type='text/javascript' src='wp-content/themes/rs-card/js/plugins/jquery.smartsticky.js?ver=4.9.13'></script>
+	<script type='text/javascript' src='wp-includes/js/wp-embed.min.js?ver=4.9.13'></script>
+</body>
+
+</html>
+
+<!-- Localized -->
